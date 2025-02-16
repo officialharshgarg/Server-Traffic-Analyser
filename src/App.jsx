@@ -15,7 +15,7 @@ export default function App() {
 
   useEffect(() => {
     axios
-      .get("https://server-traffic-analyser.onrender.com")
+      .get("https://server-traffic-analyser.onrender.com/log-data")
       .then((response) => setLogData(response.data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
